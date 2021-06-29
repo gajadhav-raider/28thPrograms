@@ -1,0 +1,20 @@
+<script>
+    student={name:"Gaurav Jadhav",age:21,Qualification:"B.Voc"};//way one object Creation
+    document.write(student.name+' '+student.age+" "+student.Qualification+" <br>");
+    var student = new Object();//way 2 object Creation
+    student.name="Rani Erande";
+    student.age=22;
+    student.Qualification="B.E";
+    for(var i in student)
+    {
+        document.write(student[i]+"<br>");
+    }
+    function emp(id,name,salary){  //way 3 Object Creation
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"Vimal Jaiswal",30000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary);  
+</script>
